@@ -9,6 +9,13 @@ class SuccessPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Sucesso'),
       ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+            }, 
+          child: Text('Voltar para a página inicial'),),
+      ),
     );
   }
 }
